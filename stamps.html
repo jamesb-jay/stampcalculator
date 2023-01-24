@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./stamps.css">
+
+    <title>Stamp calculator</title>
+</head>
+<body>
+    <img id="img1" src="./stampimages/1p.png" style="display: none;">
+    <img id="img2" src="./stampimages/2p.png" style="display: none;">
+    <img id="img5" src="./stampimages/5p.png" style="display: none;">
+    <img id="img10" src="./stampimages/10p.png" style="display: none;">
+    <img id="img20" src="./stampimages/20p.png" style="display: none;">
+    <img id="img50" src="./stampimages/50p.png" style="display: none;">
+    <img id="img68" src="./stampimages/68p.png" style="display: none;">
+    <img id="img100" src="./stampimages/100p.png" style="display: none;">
+    <img id="img105" src="./stampimages/105p.png" style="display: none;">
+    <img id="img145" src="./stampimages/145p.png" style="display: none;">
+    <img id="img185" src="./stampimages/185p.png" style="display: none;">
+    <img id="img200" src="./stampimages/200p.png" style="display: none;">
+    <img id="img255" src="./stampimages/255p.png" style="display: none;">
+    <img id="img500" src="./stampimages/500p.png" style="display: none;">
+
+    <a style="float: left; position: absolute;" href="../index.html">Closingthebrackets Home</a>
+    
+    <h1 class="title header">Postage stamp calculator</h1>
+    <h2 class="title subtitle">Find the most efficient way to pay postage with your stamps.</h2>
+
+    <p class="p1">
+        Enter the amount of postage you wish to calculate:<br>
+        £ <input id="postageAmount" type="number" step="0.01">
+    </p>
+
+    <!-- Stamp images are 140x110 -->
+    <canvas id="stampDisplay" width="700px" height="550px"></canvas>
+
+    <p>
+        This calculator supports up to 25 stamps.
+        This is a work in progress, more features coming soon.
+    </p>
+    <p>
+        WARNING: Bug: Entering the exact amount of some stamps may give an alternative to it, rather than the stamp itself.
+    </p>
+    <p>
+        Stamps: 1p, 2p, 5p, 10p, 20p, 50p, 2nd Class, 1st Class, £1, 2nd Large, 1st Large, £1.85, £255
+    </p>
+
+    <script src="stamps.js"></script>
+</body>
+</html>
