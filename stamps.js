@@ -112,8 +112,6 @@ function calcAndUpdate()
         }
     }
 
-    console.log("0", possibleResults[0]);
-    console.log("1", possibleResults[1]);
 
     if (amountLeftA > 0 && amountLeftB > 0)
     {
