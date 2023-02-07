@@ -11,6 +11,7 @@
     <title>Stamp calculator</title>
 </head>
 <body>
+    <!-- Hidden images are loaded with page -->
     <img id="img1" src="./stampimages/1p.png" style="display: none;">
     <img id="img2" src="./stampimages/2p.png" style="display: none;">
     <img id="img5" src="./stampimages/5p.png" style="display: none;">
@@ -26,32 +27,43 @@
     <img id="img255" src="./stampimages/255p.png" style="display: none;">
     <img id="img500" src="./stampimages/500p.png" style="display: none;">
 
-    <a style="float: left; position: absolute;" href="../index.html">Closingthebrackets Home</a>
-    
-    <h1 class="title header">Postage stamp calculator</h1>
-    <h2 class="title subtitle">Find the most efficient way to pay postage with your stamps.</h2>
-    <div class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle m-4 p1" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Enable/Disable Stamps
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
         </button>
-        <ul class="dropdown-menu">
-            <li><input class="form-check-input m-1" onclick="updateEnabled()" type="checkbox" id="enable1" checked> 1p </li>
-            <li><input class="form-check-input m-1" onclick="updateEnabled()" type="checkbox" id="enable2" checked> 2p </li>
-            <li><input class="form-check-input m-1" onclick="updateEnabled()" type="checkbox" id="enable10" checked> 10p </li>
-            <li><input class="form-check-input m-1" onclick="updateEnabled()" type="checkbox" id="enable5" checked> 5p </li>
-            <li><input class="form-check-input m-1" onclick="updateEnabled()" type="checkbox" id="enable50" checked> 50p </li>
-            <li><input class="form-check-input m-1" onclick="updateEnabled()" type="checkbox" id="enable20" checked> 20p </li>
-            <li><input class="form-check-input m-1" onclick="updateEnabled()" type="checkbox" id="enable68" checked> 2nd </li>
-            <li><input class="form-check-input m-1" onclick="updateEnabled()" type="checkbox" id="enable95" checked> 1st </li>
-            <li><input class="form-check-input m-1" onclick="updateEnabled()" type="checkbox" id="enable100" checked> £1 </li>
-            <li><input class="form-check-input m-1" onclick="updateEnabled()" type="checkbox" id="enable105" checked> 2nd Large </li>
-            <li><input class="form-check-input m-1" onclick="updateEnabled()" type="checkbox" id="enable145" checked> 1st Large </li>
-            <li><input class="form-check-input m-1" onclick="updateEnabled()" type="checkbox" id="enable185" checked> £1.85 </li>
-            <li><input class="form-check-input m-1" onclick="updateEnabled()" type="checkbox" id="enable200" > £2. 00 </li>
-            <li><input class="form-check-input m-1" onclick="updateEnabled()" type="checkbox" id="enable255" checked> £2.55 </li>
-            <li><input class="form-check-input m-1" onclick="updateEnabled()" type="checkbox" id="enable500" > £5 </li>
-        </ul>
-    </div>
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Stamp calculator</a>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Closingthebrackets Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Enable/Disable Stamps
+                </a>
+                <ul class="dropdown-menu">
+                    <li><input class="form-check-input m-1" onclick="updateEnabled()" type="checkbox" id="enable1" checked> 1p </li>
+                    <li><input class="form-check-input m-1" onclick="updateEnabled()" type="checkbox" id="enable2" checked> 2p </li>
+                    <li><input class="form-check-input m-1" onclick="updateEnabled()" type="checkbox" id="enable10" checked> 10p </li>
+                    <li><input class="form-check-input m-1" onclick="updateEnabled()" type="checkbox" id="enable5" checked> 5p </li>
+                    <li><input class="form-check-input m-1" onclick="updateEnabled()" type="checkbox" id="enable50" checked> 50p </li>
+                    <li><input class="form-check-input m-1" onclick="updateEnabled()" type="checkbox" id="enable20" checked> 20p </li>
+                    <li><input class="form-check-input m-1" onclick="updateEnabled()" type="checkbox" id="enable68" checked> 2nd </li>
+                    <li><input class="form-check-input m-1" onclick="updateEnabled()" type="checkbox" id="enable95" checked> 1st </li>
+                    <li><input class="form-check-input m-1" onclick="updateEnabled()" type="checkbox" id="enable100" checked> £1 </li>
+                    <li><input class="form-check-input m-1" onclick="updateEnabled()" type="checkbox" id="enable105" checked> 2nd Large </li>
+                    <li><input class="form-check-input m-1" onclick="updateEnabled()" type="checkbox" id="enable145" checked> 1st Large </li>
+                    <li><input class="form-check-input m-1" onclick="updateEnabled()" type="checkbox" id="enable185" checked> £1.85 </li>
+                    <li><input class="form-check-input m-1" onclick="updateEnabled()" type="checkbox" id="enable200" > £2. 00 </li>
+                    <li><input class="form-check-input m-1" onclick="updateEnabled()" type="checkbox" id="enable255" checked> £2.55 </li>
+                    <li><input class="form-check-input m-1" onclick="updateEnabled()" type="checkbox" id="enable500" > £5 </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     
 
     <p class="p1">
