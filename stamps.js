@@ -6,7 +6,7 @@ onep = document.getElementById("img1");
 
 const stampWidth = 140;
 const stampHeight = 110
-const allStampValues = [1, 2, 5, 10, 20, 50, 68, 100, 105, 145, 185, 200, 255, 500];
+const allStampValues = [1, 2, 5, 10, 20, 50, 68, 95, 100, 105, 145, 185, 200, 255, 500];
 
 let enabledStampValues = allStampValues;
 
