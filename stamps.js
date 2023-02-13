@@ -59,7 +59,7 @@ function drawMessage(message, subMessage)
 function calcAndUpdate()
 {
     let possibleResults = [[], []];
-    let targetValue = postageAmount.value * 100;
+    let targetValue = Math.round(postageAmount.value * 100);
     let lastStampValue = 0;
     
     // Try all values
@@ -67,6 +67,7 @@ function calcAndUpdate()
 
     for (let i = enabledStampValues.length - 1; i > -1;)
     {
+        console.log(amountLeftA, " A");
         if (amountLeftA - enabledStampValues[i] > -1)
         {
             amountLeftA -= enabledStampValues[i];
@@ -78,10 +79,11 @@ function calcAndUpdate()
         }
     }
     
-    // Try just multiples of 10 first
+    // Try just multiples of 10 
     let amountLeftB = targetValue;
     for (let i = enabledStampValues.length - 1; i > -1;)
     {
+        console.log(amountLeftB, " B");
         if (enabledStampValues[i] % 10 != 0)
         {
             i--;
